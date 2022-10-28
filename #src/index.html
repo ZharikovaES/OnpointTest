@@ -9,9 +9,82 @@
 </head>
 
 <body class="preload">
-    @@include('_header.html')
-    <main>
-    </main>
+    <div class="slider">
+        @@include('_header.html')
+        <main class="slider__wrapper">
+            <div class="slide slider__slide home-slide">
+                <div class="container">
+                    <h1 class="home-slide__title">
+                        <span class="title">привет,</span>
+                        это <span class="bold">не</span> коммерческое задание
+                        <button class="home-slide__btn btn--pink" type="button">
+                            <div class="icon" arria-hidden="true">
+                                <svg viewBox="0 0 54 54" class="arrow-white" width="54" height="54">
+                                    <use xlink:href="images/icons.svg#arrow-white"></use>
+                                </svg>                        
+                            </div>
+                            <span class="home-slide__text">Что дальше?</span>
+                        </button>
+                    </h1>
+                </div>
+            </div>
+            <div class="slide slider__slide message-slide">
+                <div class="container">
+                    <h2 class="message-slide__title title">
+                        Текст сообщения
+                    </h2>
+                    <div class="message-slide__content content-message">
+                        <div class="content-message__box">
+                            <p class="content-message__text"><span class="bold">Lorem ipsum dolor sit amet,</span> consectetur adipiscing elit, sed do 
+                                eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                                Duis ut diam quam nulla. Mauris in aliquam sem fringilla ut morbi 
+                                tincidunt. Vitae aliquet nec ullamcorper sit amet risus nullam eget 
+                                felis. Nulla pharetra diam sit amet nisl. Eget nulla facilisi etiam 
+                                dignissim diam quis enim lobortis. Est sit amet facilisis magna. 
+                                Neque laoreet suspendisse interdum consectetur libero id. 
+                                Nec ullamcorper sit amet risus nullam eget felis eget. 
+                                Mollis aliquam ut porttitor leo a diam sollicitudin tempor id. 
+                                Euismod quis viverra nibh cras pulvinar mattis nunc. 
+                                Massa massa ultricies mi quis. Sit amet massa vitae tortor 
+                                condimentum lacinia. Et malesuada fames ac turpis egestas 
+                                integer eget. Elementum pulvinar etiam non quam lacus suspendisse 
+                                faucibus interdum posuere.
+                                <br>
+                                Amet justo donec enim diam vulputate ut pharetra sit. 
+                                Risus ultricies tristique nulla aliquet enim tortor at auctor. 
+                                Velit sed ullamcorper morbi tincidunt ornare massa. 
+                                Quis hendrerit dolor magna eget est lorem ipsum. Etiam dignissim 
+                                diam quis enim. Gravida neque convallis a cras. Ut enim blandit 
+                                volutpat maecenas volutpat. Mauris sit amet massa vitae tortor 
+                                condimentum lacinia quis vel.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="slide slider__slide features-slide">
+                <div class="features-slide__img">
+                    <img src="images/bottle.png" alt="Средство XY">
+                </div>
+                <div class="container">
+                    <h2 class="features-slide__title">
+                        <span class="title">Ключевое сообщение</span>
+                        BREND<span class="bold">XY</span>
+                    </h2>
+                    <div class="features-slide__items">
+                        <div class="features-slide__item">Ehicula ipsum a arcu cursus vitae. Eu non diam phasellus vestibulum lorem sed risus ultricies</div>
+                        <div class="features-slide__item">A arcu cursus vitae</div>
+                        <button class="features-slide__btn btn--pink" type="button">
+                            <div class="icon" arria-hidden="true"><span>+</span></div>
+                            <span class="home-slide__text">Подробнее</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </main>
+        @@include('_footer.html')
+        @@include('_pop-up.html')
+    </div>
     <script src="js/main.min.js"></script>
 </body>
 
