@@ -1,0 +1,57 @@
+.home-slide {
+    &__title {
+        font-family: 'Gilroy', sans-serif;
+        font-size: min(min(18vh, 14vw), 218px);
+        font-weight: 300;
+        line-height: 1;
+        text-transform: uppercase;
+        margin-top: max(20vh, 100px);
+
+        @media screen and (max-width: 1750px) {
+            font-size: min(12vw, 218px);
+        }
+        @media screen and (max-height: 1000px) {
+            font-size: min(10vw, 218px);
+        }
+        &>span{
+            @media screen and (max-width: 500px) {
+                display: block;
+            }
+        }
+
+        span.title{
+            display: block;
+            margin-bottom: min(2vh, 20px);
+
+            @media screen and (max-height: 500px) {
+                margin-bottom: min(1vh, 20px);
+            }
+        
+        }
+        span.bold{
+            font-weight: 800;
+        }
+    }
+    &__btn {
+        transform: translateY(-35%);
+        @media screen and (max-width: 500px) {
+            transform: none;
+        }
+    }
+    &__text {}
+}
+.message-slide {
+    &__title {}
+    &__content {}
+}
+.content-message {
+    &__box {}
+    &__text {}
+}
+.features-slide {
+    &__img {}
+    &__title {}
+    &__items {}
+    &__item {}
+    &__btn {}
+}

@@ -1,2 +1,31 @@
-.header {
+.header-slider {
+    width: 100%;
+    
+    &__nav {}
+    &__list {
+        display: flex;
+        align-items: center;
+    }
+    &__list-item {
+        text-transform: uppercase;
+        
+        & + & {
+            margin-left: min(25px, 5vw);
+            padding-left: min(25px, 5vw);
+            border-left: 2px solid #282828;
+        }
+    }
+    &__btn-home {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        svg {
+            width: min(4vw, 44px);
+
+            @media screen and (max-width: 450px) {
+                width: min(6vw, 44px);
+            }        
+        }
+    }
 }
