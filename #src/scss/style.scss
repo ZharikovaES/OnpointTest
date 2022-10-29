@@ -70,6 +70,8 @@ img{
     @include adaptiv-font(54, 20, 1);
     line-height: 1;
     color: $dark2;
+    text-transform: uppercase;
+    font-weight: 300;
 }
 
 .btn--pink{

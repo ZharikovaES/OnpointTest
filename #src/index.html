@@ -29,15 +29,19 @@
                         </button>
                     </h1>
                 </div>
-            </div>
+            </div> 
             <div class="slide slider__slide message-slide">
                 <div class="container">
-                    <h2 class="message-slide__title title">
-                        Текст сообщения
+                    <h2 class="message-slide__title title" id="message-title">
+                        Текст<br> сообщения
                     </h2>
                     <div class="message-slide__content content-message">
+                        <div class="content-message__scroll scroll-message" aria-labelledby="scroll message-title" id="scroll" aria-label="Скролл для прокрутки текста" aria-controls="message-text">
+                            <div class="scroll-message__track"></div>
+                            <div class="scroll-message__thumb"></div>
+                        </div>
                         <div class="content-message__box">
-                            <p class="content-message__text"><span class="bold">Lorem ipsum dolor sit amet,</span> consectetur adipiscing elit, sed do 
+                            <p id="message-text" class="content-message__text"><span class="bold">Lorem ipsum dolor sit amet,</span> consectetur adipiscing elit, sed do 
                                 eiusmod tempor incididunt ut labore et dolore magna aliqua. 
                                 Duis ut diam quam nulla. Mauris in aliquam sem fringilla ut morbi 
                                 tincidunt. Vitae aliquet nec ullamcorper sit amet risus nullam eget 
