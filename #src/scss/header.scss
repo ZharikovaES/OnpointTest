@@ -5,6 +5,8 @@
     &__list {
         display: flex;
         align-items: center;
+        @include adaptiv-font(34, 24, 1);
+        letter-spacing: 5px;
     }
     &__list-item {
         text-transform: uppercase;

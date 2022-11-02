@@ -1,0 +1,320 @@
+.features-slide {
+    position: relative;
+    height: 100%;
+    
+    &__img {
+        position: absolute;
+        z-index: 8;
+        bottom: calc((-1) * (min(5vh, 30px) + 55px));
+        height: calc(100% + min(5vh, 30px) + 85px - 4vh);
+        width: min(625px, 36vw);
+
+        @media screen and (min-width: 1000px) and (max-width: 2000px) and (min-height: 1000px) {
+            width: max(320px, 36vw);
+        }  
+        @media screen and (min-width: 900px) and (min-height: 900px) {
+            width: max(400px, 33vw);
+        }
+        @media screen and (min-width: 850px) and (min-height: 850px) {
+            width: max(320px, 36vw);
+        }    
+        @media screen and (min-width: 800px) and (min-height: 800px) {
+            width: max(320px, 36vw);
+        }  
+        @media screen and (max-width: 750px) {
+            height: 30vh;
+        }  
+
+        .product {
+            max-width: min(23vw, 470px);
+            transform: translateX(-50%);
+
+            position: absolute;
+            left: 50%;
+            bottom: 0;
+            width: 100%;
+            max-height: 100%;
+            object-fit: contain;
+            margin-bottom: -9px;
+            z-index: 9;
+
+            @media screen and (min-width: 900px) and (max-width: 1750px) and (min-height: 900px) and (max-height: 1000px) {
+                max-width: max(30vw, 270px);
+            }    
+            @media screen and (min-width: 800px) and (min-height: 800px) {
+                max-width: max(32vw, 270px);
+            }    
+            @media screen and (max-width: 750px) {
+                transform: translateX(-55%);
+            }  
+    
+        }
+        .bubble{
+            position: absolute;
+            bottom: 0;
+            object-fit: contain;
+            width: 100%;
+            right: -2vw;
+
+            @media screen and (max-width: 800px) {
+                right: 0;
+            }      
+
+            &--back {
+                z-index: 8; 
+                bottom: min(15vh, 230px);
+                max-height: min(1175px, 77vh, 100%);
+
+                @media screen and (min-width: 750px) and (max-width: 1050px), screen and (min-width: 1200px) and (min-height: 1000px) and (max-height: 1400px) {
+                    right: -3vw;
+                }          
+                @media screen and (max-width: 1400px) and (min-height: 900px) {
+                    right: -6vw;
+                }          
+                @media screen and (max-width: 1200px), screen and (max-width: 1400px) and (min-height: 900px) {
+                    right: -4vw;
+                }          
+                @media screen and (max-width: 1050px) {
+                    right: -6vw;
+                }          
+                @media screen and (max-width: 1200px) and (max-height: 1300px) {
+                    bottom: min(11vh, 230px);
+                }   
+                @media screen and (max-width: 1100px) and (max-height: 700px) {
+                    bottom: min(10vh, 230px);
+                }    
+                @media screen and (max-width: 1050px) and (min-height: 950px) and (max-height: 1400px) {
+                    bottom: min(4vh, 230px);
+                }   
+                @media screen and (max-width: 1000px) and (max-height: 950px) {
+                    bottom: min(10vh, 230px);
+                }      
+                @media screen and (max-width: 900px) and (max-height: 1300px) {
+                    bottom: min(1vh, 230px);
+                }    
+                @media screen and (max-width: 900px) and (max-height: 900px) {
+                    bottom: min(12vh, 230px);
+                }    
+                @media screen and (max-width: 750px), screen and (max-width: 750px) and (max-height: 700px) {
+                    bottom: min(3vh, 230px);
+                }    
+            }
+            &--front {
+                z-index: 10;
+                bottom: calc((-1) * min(9vh, 130px));
+                max-height: min(1380px, 89vh, 100%);
+                @media screen and (max-width: 750px) {
+                    bottom: calc((-1) * min(3vh, 130px));
+                }      
+            }
+        }
+    }
+    &__container{
+        padding-left: max(400px, 18vw);
+
+        @media screen and (max-width: 2000px) {
+            padding-left: max(500px, 28vw);
+        }
+        @media screen and (max-width: 1349px) {
+            padding-left: max(400px, 33vw);
+        }
+        @media screen and (max-width: 900px), screen and (min-height: 500px) and (max-height: 850px) {
+            padding-left: min(320px, 40vw);
+        }
+        @media screen and (max-width: 800px), screen and (min-height: 500px) and (max-height: 850px) {
+            padding-left: min(320px, 32vw);
+        }
+        @media screen and (max-width: 800px) and (min-height: 1100px) {
+            padding-left: min(320px, 22vw);
+        }
+        @media screen and (max-width: 750px) {
+            padding: 0 10px;
+        }
+    }
+    &__title {
+        padding-left: min(200px, 10vw);
+        padding-bottom: min(100px, 8vh);
+        padding-top: min(12vh, 190px);
+        font-family: 'Gilroy', sans-serif;
+        font-size: min(18vh, 14vw, 190px);
+        font-weight: 400;
+        line-height: 1;
+        text-transform: uppercase;
+
+        @media screen and (max-width: 1750px) {
+            padding-left: min(200px, 6vw);
+            font-size: min(18vh, 9vw, 190px);
+        }
+        @media screen and (max-width: 1200px) {
+            padding-left: min(200px,2vw);
+            font-size: min(18vh, 8vw, 190px);
+        }
+        @media screen and (max-height: 1100px) {
+            padding-bottom: min(100px, 4vh);
+        }
+        @media screen and (max-height: 1000px) {
+            padding-top: min(6vh, 190px);
+            padding-bottom: min(100px, 6vh);
+        }
+
+        .title{
+            display: block;
+            margin-bottom: min(2vh, 20px);
+    
+            @media screen and (max-height: 500px) {
+                margin-bottom: min(1vh, 20px);
+            }
+
+            &--large{
+                letter-spacing: 25px;
+                display: inline-block;
+                transform: translateX(-10px);
+
+                @media screen and (max-width: 1800px) {
+                    transform: translateX(0);
+                }
+                @media screen and (max-width: 1500px) {
+                    transform: translateX(-5px);
+                }
+                @media screen and (max-width: 800px) {
+                    letter-spacing: 20px;
+                }
+                @media screen and (max-width: 650px) {
+                    transform: translateX(0);
+                }
+                @media screen and (max-width: 450px) {
+                    letter-spacing: 15px;
+                }      
+        
+            }
+        }
+
+        .bold{
+            font-weight: 800;
+        }
+    }
+    &__items {
+        display: grid;
+        grid-template-areas: "A B"
+                             "A C";
+        grid-template-columns: 63fr 37fr;
+        align-items: start;
+        row-gap: min(5vh, 70px);
+        column-gap: min(4vw, 80px);
+
+        @media screen and (max-width: 1950px) {
+            column-gap: min(2vw, 80px);
+        }
+        @media screen and (max-width: 1350px) {
+            row-gap: min(2vh, 70px);
+        }
+        @media screen and (min-width: 750px) and (max-width: 1000px) and (min-height: 850px),
+        screen and (max-width: 750px) and (min-height: 1250px),
+        screen and (max-width: 450px) and (min-height: 800px),
+        screen and (max-width: 400px) and (min-height: 700px),
+        screen and (max-width: 350px) and (min-height: 600px) {
+            grid-template-areas: "A"
+                                 "B"
+                                 "C";
+            grid-template-columns: auto;
+        }    
+    }
+    &__item {
+        background-color: white;
+        border-radius: 80px;
+        padding: min(110px, 8vh) min(100px, 5vw) min(75px, 5vh) min(160px, 8vw);
+        box-shadow: 5.446px 8.387px 232.5px 17.5px rgba(157, 185, 198, 0.39);          
+        position: relative;
+        @include adaptiv-font(50, 20, 1);
+
+        @media screen and (max-width: 1700px) {
+            padding: min(110px, 8vh) min(100px, 3vw) min(75px, 5vh) min(160px, 8vw);
+        }
+        @media screen and (max-width: 1200px), screen and (max-height: 700px) {
+            border-radius: 60px;
+            padding: clamp(30px, 8vh, 50px) min(100px, 3vw) min(75px, 5vh) min(130px, 5vw);
+        }
+        @media screen and (max-width: 900px), screen and (max-height: 700px) {
+            border-radius: 40px;
+            padding: clamp(20px, 6vh, 50px) min(100px, 3vw) min(75px, 5vh) min(130px, 5vw);
+        }
+        @media screen and (max-width: 1199px) and (min-height: 900px) {
+            padding: max(50px, 5vh) max(40px, 4vw) max(30px, 3vh) max(40px, 4vw);
+        }    
+        @media screen and (max-width: 850px) {
+            font-size: min(4vw, 25px);
+        }
+        @media screen and (max-width: 700px) {
+            border-radius: 40px;
+        }
+        @media screen and (max-width: 450px) {
+            border-radius: 20px;
+        }
+        @media screen and (max-width: 450px) and (min-height: 800px),
+               screen and (max-width: 400px) and (min-height: 700px),
+               screen and (max-width: 350px) and (min-height: 600px) {
+            padding: clamp(10px, 3vh, 50px) min(100px, 3vw) max(10px, 2vh) min(130px, 5vw);
+        }    
+        @media screen and (max-height: 700px) {
+            font-size: min(4vw, 25px);
+        }
+
+        
+        &::before{
+            content: '';
+            display: block;
+            position: absolute;
+            top: 0;
+            background-repeat: no-repeat;
+            background-size: contain;
+        }
+
+        
+        &:nth-child(1){
+            grid-area: A;
+            
+            &::before{
+                width: min(134px, 7vw);
+                height: min(126px, 9vh);
+                transform: translateY(-30%);
+                background-image: url("../images/features/features-icon-1.png");
+                
+                @media screen and (max-width: 800px) {
+                    width: min(134px,10vw);
+                    height: min(126px,8vh);
+                }
+            }
+        }
+        &:nth-child(2){
+            margin-top: min(30px, 2vh);
+            padding-top: min(80px, 8vh);
+            padding-left: min(80px, 4vw);
+            grid-area: B;
+
+            @media screen and (max-width: 1199px) and (min-height: 900px) {
+                padding: max(50px, 5vh) max(40px, 4vw) max(30px, 3vh) max(40px, 4vw);
+            }    
+            @media screen and (max-width: 900px), screen and (max-height: 700px) {
+                padding: clamp(20px, 6vh, 50px) min(100px, 3vw) max(30px, 3vh) min(130px, 5vw);
+            }
+            @media screen and (max-width: 450px) and (min-height: 800px),
+                   screen and (max-width: 400px) and (min-height: 700px),
+                   screen and (max-width: 350px) and (min-height: 600px) {
+                padding: clamp(10px, 3vh, 50px) min(100px, 3vw) max(10px, 2vh) min(130px, 5vw);
+            }    
+    
+            &::before{
+                width: min(140px, 7vw);
+                height: min(114px, 8vh);
+                transform: translateY(-40%);
+                background-image: url("../images/features/features-icon-2.png");
+                @media screen and (max-width: 800px) {
+                    width: min(134px,12vw);
+                }
+            }
+        }
+    }
+    &__btn {
+        grid-area: C;
+    }
+}

@@ -22,11 +22,13 @@ $dark4: #2e2e2e;
 
 html, body {
     min-height: 100vh;
+    width: 100vw;
 }
 body{
     font-family: $fontFamaly, sans-serif;
     @include adaptiv-font(44, 20, 1);
     color: $dark1;
+    overflow: hidden;
 }
 img{
     display: inline-block;
@@ -71,7 +73,6 @@ img{
     line-height: 1;
     color: $dark2;
     text-transform: uppercase;
-    font-weight: 300;
 }
 
 .btn--pink{
@@ -134,7 +135,7 @@ img{
         span{
             position: relative;
             font-family: "Gilroy", sans-serif;
-            @include adaptiv-font(60, 30, 1);
+            @include adaptiv-font(60, 10, 1);
             line-height: 100%;
             color: $white1;
             z-index: 3;
